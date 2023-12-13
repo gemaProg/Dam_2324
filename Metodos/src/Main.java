@@ -1,18 +1,42 @@
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
+
+
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner lector = new Scanner(System.in);
+        System.out.println("Calculando:\n Introduzca 1. Sumar\n 2.Restar\n 3.Multiplicar\n 4.Dividir\n");
+        int opcion = lector.nextInt();
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        switch (opcion){
+            case 1:
+                //método que recibe y devuelve, sólo se encarga del procesado
+                System.out.println("Introduzca operandos");
+                byte num1 = lector.nextByte();
+                byte num2 = lector.nextByte();
+                int resultado = Calculadora.suma(num1,num2);
+                System.out.println(resultado);
+                System.out.println(Calculadora.suma(num1,num2));
+                break;
+            case 2:
+                //método que ni recibe ni devuelve, se encarga de todo
+                Calculadora.resta();
+                break;
+            case 3:
+                //método que recibe y no devuelve
+                System.out.println("Introduzca operandos");
+                num1 = lector.nextByte();
+                num2 = lector.nextByte();
+                Calculadora.multiplicar(num1,num2);
+                break;
+            case 4:
+                //método que no recibe y devuelve
+                System.out.println(Calculadora.dividir());
         }
-        System.out.println("Hola mundo");
+
     }
+
+
 }
