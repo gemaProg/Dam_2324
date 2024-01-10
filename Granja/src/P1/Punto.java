@@ -20,6 +20,10 @@ public class Punto {
     public double getY() {
         return y;
     }
+    public double calcularDistanciaDesde(Punto otroPunto){
+        return Math.sqrt(Math.pow(x-otroPunto.x,2)+Math.pow(y-otroPunto.y,2));
+    }
+
 
     @Override
     public String toString() {
