@@ -1,3 +1,5 @@
+package granja;
+
 import java.util.Arrays;
 
 public class Gallina {
@@ -11,7 +13,6 @@ public class Gallina {
     public static String getNombreAleatorio(){
     return nombres[(int)(Math.random()*nombres.length)];
     }
-
     public Gallina(){
         nombre = nombres[(int)(Math.random()*nombres.length)];
         edad= (int)(Math.random()*9);
@@ -30,9 +31,7 @@ public class Gallina {
 
     public void huevosDia(int dia, int huevos){
         huevosSemana[dia-1] = huevos;
-
     }
-
 
     public String toString(){
         return String.format("Me llamo %s, este es mi peso %.2f, tengo %d años y pongo a la semana \n %s", nombre,peso,edad, Arrays.toString(huevosSemana));
