@@ -44,6 +44,6 @@ public abstract class Animal {
         this.peso = peso;
     }
     public String toString(){
-        return String.format("Me llamo %s, este es mi peso %.2f, tengo %d años \n", nombre,peso,edad);
+        return this.getClass().getSimpleName().toUpperCase()+"---"+String.format("Me llamo %s, este es mi peso %.2f, tengo %d años \n", nombre,peso,edad);
     }
 }
