@@ -7,8 +7,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-
-        Gallina random = new Gallina();
+       /* Gallina random = new Gallina();
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduce nombre, edad y peso");
         String nombre = lector.nextLine();
@@ -25,6 +24,15 @@ public class Main {
         System.out.println(random.getPeso());
         System.out.println(especial.getPeso());
         especial.huevosDia(2,3);
-        System.out.println(especial);
+        System.out.println(especial);*/
+        Scanner lector = new Scanner(System.in);
+        System.out.println("Introduce nombre, edad y peso");
+        String nombre = lector.nextLine();
+        int edad = lector.nextInt();
+        float peso = lector.nextFloat();
+        Gallina especial= new Gallina(nombre, edad, peso);
+        System.out.println(especial.toString());
+        Gallina random = new Gallina();
+        System.out.println(random);
     }
 }
