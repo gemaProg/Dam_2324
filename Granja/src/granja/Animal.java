@@ -1,6 +1,7 @@
 package granja;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public abstract class Animal {
     protected String nombre;
@@ -12,6 +13,7 @@ public abstract class Animal {
         edad= (int)(Math.random()*9);
         peso= (float)(Math.random()*100+1);*/
         this(Utilidades.nombres[(int)(Math.random()*Utilidades.nombres.length)],(int)(Math.random()*9),(float)(Math.random()*100+1));
+
     }
 
     public Animal(String nombre, int edad, float peso){
