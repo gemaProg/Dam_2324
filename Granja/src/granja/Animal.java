@@ -45,6 +45,9 @@ public abstract class Animal {
     public void setPeso(float peso) {
         this.peso = peso;
     }
+
+    public abstract double media();
+
     public String toString(){
         return this.getClass().getSimpleName().toUpperCase()+"---"+String.format("Me llamo %s, este es mi peso %.2f, tengo %d años \n", nombre,peso,edad);
     }

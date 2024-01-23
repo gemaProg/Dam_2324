@@ -65,9 +65,13 @@ public class Main {
         System.out.println(especial.toString());
         Gallina random = new Gallina();
         System.out.println(random);*/
+        /*
         Animal animal;
         animal = creaAnimal();
-        System.out.println(animal);
+        System.out.println(animal);*/
+        Granja granja = new Granja(12);
+        System.out.println(granja);
 
     }
+
 }
