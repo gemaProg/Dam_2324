@@ -9,7 +9,7 @@ public class Juego {
         //lo mismo con lo que falta
         //0..7
 
-
+        return nuevo;
     }
 
 }

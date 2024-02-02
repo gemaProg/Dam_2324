@@ -104,5 +104,11 @@ public abstract class Empleado {
     //Métodos
 
     public abstract double calcularSalario();
+
+    /**
+     *
+     * @param temporada
+     * @return el salario real calculado en función del salario base
+     */
     public abstract double calcularSalario(boolean temporada);
 }
